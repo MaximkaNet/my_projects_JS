@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="gameLobby">
+            <div class="gameLobbyInner">
+                <div class="info">
+                    <h1>Крестики нолики</h1>
+                    <h2>Создатель:
+                        <a href="https://www.instagram.com/07_maximum_07/" target="_blank">Maxim Zavada</a></h2>
+                </div>
+                <div class="settings">
+                    <ul class="settings-menu">
+                        <li class="setting-block">
+                            <h3>Имя игрока:</h3>
+                            <input type="text" name="" id="nicknameValue" placeholder=" Nickname" class="setting-input">
+                        </li>
+
+                        <li class="setting-block">
+                            <h3>Размер поля:</h3>
+                            <input type="number" name="" id="gameFieldValue" placeholder=" Например: 5" class="setting-input">
+                        </li>
+                        <li class="setting-block">
+                            <h3>Тип игрока:</h3>
+                            <div class="typePlayer">
+                                <div class="playerSign player-active">
+                                    X
+                                </div>
+                                <div class="playerSign">
+                                    O
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="playBtn"><span>Начать игру</span></div>
+            </div>
+        </div>
+        <div class="winInfo">
+            <h3>Победитель: </h3>
+            <div class="winer"></div>
+        </div>
+        <div class="game">
+            <div class="quitGame hidden">Завершить</div>
+            <div class="gameField">
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

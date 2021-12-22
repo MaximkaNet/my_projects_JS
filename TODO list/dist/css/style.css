@@ -1,0 +1,116 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Calibri';
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 70vw;
+  height: fit-content;
+  margin: 20px 0 0 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 7px 1px #afafaf94;
+}
+
+.block {
+  width: calc(100% - 40px);
+  padding: 0 20px;
+}
+
+#new-task {
+  width: calc(100% - 60px);
+  border: 1px solid #ccc;
+  border-radius: 3px 0 0 3px;
+  margin: 15px 0;
+  padding: 10px 10px 10px 15px;
+  font-size: 18px;
+}
+
+.wrap-input {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  width: 55px;
+  height: 44px;
+  border: none;
+  background-color: #ccc;
+  border-radius: 0px 3px 3px 0;
+  display: block;
+}
+
+button::before {
+  content: '\271A';
+  font-weight: 100;
+  color: #3a3a3a;
+}
+
+#complete-task {
+  display: block;
+  width: 55px;
+  height: 44px;
+}
+
+#complete-task::before {
+  content: '\2714';
+  width: 55px;
+  height: 44px;
+  border: none;
+  background-color: #13b120;
+  border-radius: 3px;
+  display: block;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.complete#complete-task::before {
+  content: '\2714';
+  background-color: #ccc;
+  color: #3a3a3a;
+}
+.complete-task{
+  border-top: 2px solid #13b120;
+}
+.uncomplete-task{
+  border-top: 2px solid #ccc;
+}
+
+.controls {
+  display: flex;
+  margin: auto;
+  margin-right: 0px;
+}
+
+.content {
+  font-size: 18px;
+}
+
+.task-wrap {
+  display: flex;
+  padding: 15px 20px;
+}
+
+#remove-task {
+  margin: 0 0 0 5px;
+  background-color: #da2727;
+  border-radius: 3px;
+}
+
+#remove-task::before {
+  content: '\2718';
+  color: white;
+}
