@@ -9,19 +9,19 @@ import React, { useState, useEffect } from 'react';
 function GetPosts() {
   const [items, setItems] = useState([]);
   useEffect(() => {
-      ajaxUtils.getPosts().then(
-        (result) => {
-          setItems(result);
-        },
-      )
+    ajaxUtils.getPosts().then(
+      (result) => {
+        setItems(result);
+      },
+    )
   }, [])
-    return (
-      <div className="posts">
-        {items.map(item => (
-          <Post key={item.id} userId={item.userId} title={item.title} body={item.body} />
-        ))}
-      </div>
-    );
+  return (
+    <div className="posts">
+      {items.map(item => (
+        <Post key={item.id} userId={item.userId} title={item.title} body={item.body} />
+      ))}
+    </div>
+  );
 }
 
 export default GetPosts;
